@@ -1,0 +1,107 @@
+// ==========================================================================
+// Website or App Stylesheet
+// ==========================================================================
+
+// ==========================================================================
+// Variable overides (http://getbase.org/docs/css.html#variables)
+// ==========================================================================
+
+// Global Typography
+//$base-background-color:                         #000 !default;
+
+
+// Import Base
+@import "node_modules/getbase/scss/base";
+
+// Base Helpers
+@import "node_modules/getbase/scss/base/_helpers";
+
+
+// ==========================================================================
+// Base SCSS overides overides
+// ==========================================================================
+
+
+
+// ==========================================================================
+// Main Stylesheet
+// ==========================================================================
+
+body {
+  background-color: dodgerblue;
+}
+
+div {
+  height: 600px;
+}
+
+.one {
+  background-color: crimson;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: gold;
+}
+
+.four {
+  background-color: yellowgreen;
+}
+
+.five {
+  background-color: green;
+}
+
+.six {
+  background-color: deepskyblue;
+}
+
+.seven {
+  background-color: mediumblue;
+}
+.eight {
+  background-color: navy;
+}
+.nine {
+  background-color: darkslateblue;
+}
+.nine {
+  background-color: fuchsia;
+}
+.eleven {
+  background-color: purple;
+}
+.twelve {
+  background-color: black;
+}
+
+
+// ==========================================================================
+// Brakepoint exapmles (to be deleted)
+// ==========================================================================
+
+h1 {
+color: pink;
+}
+
+@include breakpoint(m) {
+	h1 {
+		color: green;
+	}
+};
+
+@include breakpoint(l) {
+	h1 {
+		color: blue;
+	}
+};
+
+
+@include breakpoint(xl) {
+	h1 {
+		color: grey;
+	}
+};
