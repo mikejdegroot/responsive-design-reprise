@@ -28,13 +28,34 @@
 // ==========================================================================
 
 body {
-  background-color: dodgerblue;
+  background-color: white;
+  text-align: center;
 }
 
 div {
-  min-height: 600px;
+  min-height: 50vh;
+  max-height: 100vh;
 }
 
+#topper {
+  height: 100vh;
+  position: relative;
+  h1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+}
+
+.middles {
+  height: 50vh;
+  h3 {
+    color: white;
+  }
+}
 .one {
   background-color: crimson;
 }
@@ -78,6 +99,10 @@ div {
   background-color: black;
 }
 
+.small {
+  height: 200px !important;
+}
+
 
 // ==========================================================================
 // Brakepoint exapmles (to be deleted)
@@ -88,9 +113,9 @@ color: pink;
 }
 
 @include breakpoint(m) {
-	h1 {
-		color: green;
-	}
+	.middles {
+    height: 100vh;
+  }
 };
 
 @include breakpoint(l) {

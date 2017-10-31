@@ -8,42 +8,75 @@
   <meta name="description" content="">
   <meta name="theme-color" content="#f7c824">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="scss/jquery.fullPage.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- <div class="container">  -->
 <!-- adding the container gives us large bars on either side of the container, without it we are full screen -->
-	<div class="row clear pad-top-5 pad-bottom-5">
-	  <div class="col-12 one">col-1</div>
-  </div>
-  <!-- col 1-2 = half of of available space from mobile and up, base is mobile first! -->
-  <!-- col 1-4-m = a quater size on medium screen and up -->
-  <!-- styling for mobile first with base is a hell of alot easier -->
-  <div class="row clear pad-top-5 pad-bottom-5">
-	  <div class="col-1-2 col-1-4-m three">col</div>
-	  <div class="col-1-2 col-1-4-m four">col</div>
-    <div class="col-1-2 col-1-4-m five">col</div>
-    <div class="col-1-2 col-1-4-m one">col</div>
-  </div>
-  <div class="row clear pad-top-5 pad-bottom-5">
-    <div class="col-full col-1-2-m twelve">col</div>
-    <div class="col-full col-1-2-m seven">col</div>
-  </div>
-  <div class="row clear pad-top-5 pad-bottom-5">
-    <div class="col-1-2 col-1-3-m nine">col</div>
-    <div class="col-1-2 col-1-3-m one">col</div>
-    <div class="col-1-2 col-1-3-m six">col</div>
-	</div>
-  <div class="row clear pad-top-5 pad-bottom-5">
-  <div class="col-1-3 col-1-5-m five">col</div>
-	  <div class="col-1-3 col-1-5-m seven">col</div>
-	  <div class="col-1-3 col-1-5-m two">col</div>
-	  <div class="col-1-3 col-1-5-m eleven">col</div>
-	  <div class="col-1-3 col-1-5-m twelve">col</div>
-  </div>
-<!-- </div> -->
+  <div id="fullpage">
+    <div class="section">
+        <!-- col 1-2 = half of of available space from mobile and up, base is mobile first! -->
+        <!-- col 1-4-m = a quater size on medium screen and up -->
+        <!-- styling for mobile first with base is a hell of alot easier -->
+      <div class="row clear pad-top-5 pad-bottom-5">
+    	  <div id="topper" class="col-12 one">
+        <h1>Title</h1>
+      </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row clear pad-top-5 pad-bottom-5">
+        <div class="col-1-2 col-1-4-m three middles"><h1>Article</h1></div>
+        <div class="col-1-2 col-1-4-m four middles"><h1>Article</h1></div>
+        <div class="col-1-2 col-1-4-m five middles"><h1>Article</h1></div>
+        <div class="col-1-2 col-1-4-m one middles"><h1>Article</h1></div>
+      </div>
+    </div>
 
+    <div class="section">
+      <div class="row clear pad-top-5 pad-bottom-5">
+        <div class="col-full col-1-2-m twelve middles">
+        <h1>Feature</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3></div>
+        <div class="col-full col-1-2-m seven">
+          <div class="row clear">
+            <div class="col-full col-1-2-m small three"><h1>Image</h1></div>
+            <div class="col-full col-1-2-m small one"><h1>Image</h1></div>
+            <div class="col-full col-1-2-m small two"><h1>Image</h1></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row clear pad-top-5 pad-bottom-5">
+        <div class="col-1-2 col-1-3-m nine middles">col</div>
+        <div class="col-1-2 col-1-3-m one middles">col</div>
+        <div class="col-1-2 col-1-3-m six middles">col</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row clear pad-top-5 pad-bottom-5">
+      <div class="col-1-3 col-1-5-m five middles">col</div>
+        <div class="col-1-3 col-1-5-m seven middles">col</div>
+        <div class="col-1-3 col-1-5-m two middles">col</div>
+        <div class="col-1-3 col-1-5-m eleven middles">col</div>
+        <div class="col-1-3 col-1-5-m twelve middles">col</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- </div> -->
 <script src="js/vendor/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script src="js/vendor/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/vendor/scrolloverflow.min.js"></script>
+
+
+
 <script src="js/default.js"></script>
 
 </body>
