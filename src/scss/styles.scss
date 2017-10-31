@@ -108,9 +108,6 @@ div {
 // Brakepoint exapmles (to be deleted)
 // ==========================================================================
 
-h1 {
-color: pink;
-}
 
 @include breakpoint(m) {
 	.middles {
