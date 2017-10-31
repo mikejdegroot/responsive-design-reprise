@@ -11,22 +11,37 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="container">
+<!-- <div class="container">  -->
+<!-- adding the container gives us large bars on either side of the container, without it we are full screen -->
 	<div class="row clear pad-top-5 pad-bottom-5">
-	  <div class="col-1 one">col-1</div>
-	  <div class="col-1 two">col-1</div>
-	  <div class="col-1 three">col-1</div>
-	  <div class="col-1 four">col-1</div>
-	  <div class="col-1 five">col-1</div>
-	  <div class="col-1 six">col-1</div>
-	  <div class="col-1 seven">col-1</div>
-	  <div class="col-1 eight">col-1</div>
-	  <div class="col-1 nine">col-1</div>
-	  <div class="col-1 ten">col-1</div>
-	  <div class="col-1 eleven">col-1</div>
-	  <div class="col-1 twelve">col-1</div>
+	  <div class="col-12 one">col-1</div>
+  </div>
+  <!-- col 1-2 = half of of available space from mobile and up, base is mobile first! -->
+  <!-- col 1-4-m = a quater size on medium screen and up -->
+  <!-- styling for mobile first with base is a hell of alot easier -->
+  <div class="row clear pad-top-5 pad-bottom-5">
+	  <div class="col-1-2 col-1-4-m three">col</div>
+	  <div class="col-1-2 col-1-4-m four">col</div>
+    <div class="col-1-2 col-1-4-m five">col</div>
+    <div class="col-1-2 col-1-4-m one">col</div>
+  </div>
+  <div class="row clear pad-top-5 pad-bottom-5">
+    <div class="col-full col-1-2-m twelve">col</div>
+    <div class="col-full col-1-2-m seven">col</div>
+  </div>
+  <div class="row clear pad-top-5 pad-bottom-5">
+    <div class="col-1-2 col-1-3-m nine">col</div>
+    <div class="col-1-2 col-1-3-m one">col</div>
+    <div class="col-1-2 col-1-3-m six">col</div>
 	</div>
-</div>
+  <div class="row clear pad-top-5 pad-bottom-5">
+  <div class="col-1-3 col-1-5-m five">col</div>
+	  <div class="col-1-3 col-1-5-m seven">col</div>
+	  <div class="col-1-3 col-1-5-m two">col</div>
+	  <div class="col-1-3 col-1-5-m eleven">col</div>
+	  <div class="col-1-3 col-1-5-m twelve">col</div>
+  </div>
+<!-- </div> -->
 
 <script src="js/vendor/jquery-1.12.4.js"></script>
 <script src="js/default.js"></script>

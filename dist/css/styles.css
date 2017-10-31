@@ -2425,7 +2425,7 @@ body {
   background-color: dodgerblue; }
 
 div {
-  height: 600px; }
+  min-height: 600px; }
 
 .one {
   background-color: crimson; }
