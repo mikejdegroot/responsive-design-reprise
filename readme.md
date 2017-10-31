@@ -1,3 +1,5 @@
-# responsive design and sticky scrolling practice
+# Responsive design and sticky scrolling practice
 
-## sticky scrolling implemented using fullpage.js and responsive site demo with base css framework
+## Sticky scrolling implemented using fullpage.js
+
+## Base CSS framework mobile first demo
